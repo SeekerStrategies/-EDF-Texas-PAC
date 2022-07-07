@@ -2,7 +2,7 @@
     --dark: #253D85;
     --success: #588f5b;
     --warn: #c2544d;
-    --text-color: #59595B;
+    --text-color: #333333;
     --violet: #3b078e;
     --button-bg: #58058b;
 }
@@ -266,8 +266,8 @@ ul.pac__list-main li{
     box-shadow: none !important;
 }
 .donate__btn.btn-dark:focus, .donate__btn.btn-dark:hover{
-    border-color: #029EDA;
-    background-color: #029EDA;
+    border-color: #00985F;
+    background-color: #00985F;
 }
 .policy__banner-content p a:hover{
     border-bottom: 2px solid #029EDA;
