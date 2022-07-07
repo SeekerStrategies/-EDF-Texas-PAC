@@ -2,19 +2,48 @@
     --dark: #253D85;
     --success: #588f5b;
     --warn: #c2544d;
-    --text-color: #4A3C31;
+    --text-color: #59595B;
     --violet: #3b078e;
     --button-bg: #58058b;
 }
 body{
     background: linear-gradient(to top,#fefcf3 1%,rgba(254,252,243,0) 25%) !important;
 }
+@font-face{
+    font-family:'Community Gothic X-Condensed';
+    src:url("../fonts/CommunityGothicXCond-Medium.woff2") format("woff2"),url("../fonts/CommunityGothicXCond-Medium.woff") format("woff");              
+    font-weight:500;
+    font-style:normal;
+    font-display:swap;
+}
+@font-face{
+    font-family:'Community Gothic';
+    src:url("../fonts/CommunityGothic-Medium.woff2") format("woff2"),url("../fonts/CommunityGothic-Medium.woff") format("woff");font-weight:500;
+    font-style:normal;
+    font-display:swap;
+}
+@font-face {
+    font-family:"halyard-text";
+    src:url("../fonts/halyard.woff2") format("woff2"),url("../fonts/halyard.woff2") format("woff");
+    font-display:auto;
+    font-style:normal;
+    font-weight:300;
+    font-stretch:normal;
+}
+
+
+
 .container{
     max-width: 1260px !important;
     margin: 0 auto;
 }
-h1, h2, h3, h4, h5, h6, p, a, li, time{
-    font-family: 'Poppins', sans-serif;
+h1, h2, h3, h4, h5, h6{
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: "Halyard Text"; */
+    font-family:'Community Gothic'
+}
+p, a, li, time{
+    font-family:"halyard-text";
 }
 img {
     max-width: 100%;
@@ -51,9 +80,13 @@ p{
 }
 .donate__btn.btn-dark{
     background-color: var(--dark);
-    padding: 10px 30px;
+    padding: 10px 30px 12px;
     font-size: 18px;
     border-color: var(--dark);
+    line-height: 1.4;
+}
+div#collapsibleNavbar .nav-item a{
+    display: inline-block;
 }
 .banner {
     background-position: center;
@@ -124,6 +157,7 @@ section.banner:before {
 .vision__content h1{
     font-size: 48px;
     font-weight: 600;
+    color: var(--text-color);
 }
 .vision__content p, .pac__content p{
     font-size: 17px;
@@ -135,6 +169,7 @@ ul.pac__list-main li{
     list-style: disc !important;
     font-size: 17px;
     margin-bottom: 10px;
+    color: var(--text-color);
 }
 #footer a{
     display: inline-block;
@@ -145,4 +180,96 @@ ul.pac__list-main li{
 #footer{
     background: var(--dark);
     padding: 10px 0;
+}
+.grad1:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(1%,#fefcf3),color-stop(25%,rgba(254,252,243,0)));
+    background-image: linear-gradient(to bottom,#fefcf3 -1%,rgba(254,252,243,0) 17%);
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.grad1:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: -webkit-gradient(linear,left bottom,left top,color-stop(1%,#fefcf3),color-stop(25%,rgba(254,252,243,0)));
+    background-image: linear-gradient(to top,#fefcf3 -4%,rgba(254,252,243,0) 111%);
+    bottom: 0;
+    left: 0;
+}
+.grad1 {
+    background-image: linear-gradient(124.14deg,rgba(255,252,243,0) 20%,rgba(255,252,243,0.2) 39.82%,rgba(255,252,243,0) 60%),radial-gradient(154% 102% at 85% 32.47%,rgba(255,252,243,0) 49.82%,rgba(156,95,1811,0.6) 82.11%),radial-gradient(124% 129% at 35% 78.47%,rgba(255,252,243,0) 49.82%,rgba(255,252,243,0.6) 82.11%),radial-gradient(125% 178% at 25% 4.47%,rgba(255,252,243,0) 49.82%,rgba(255,252,243,0.6) 82.11%),radial-gradient(41.58% 150.68% at 26.01% 45.34%,rgba(255,252,243,0.6) 19.17%,rgba(255,252,243,0) 100%),linear-gradient(84.14deg,rgba(156,95,1811,0.2) 2.84%,rgba(247,161,166,0.2) 118.515%),radial-gradient(50% 120% at 100% 14.47%,rgba(175,155,241,0) 6.9%,rgba(230,195,255,0.5) 52.84%,rgba(175,155,241,0) 100%),radial-gradient(56% 120% at 90% 112.47%,rgba(255,155,130,0) 26.9%,rgba(202,236,189,0.9) 72.84%,rgba(255,155,130,0) 100%),radial-gradient(35% 68% at 35% 84.47%,#029EDA08 49.82%,rgba(251,211,199,0) 82.11%),linear-gradient(84.14deg,#bedbfa 2.84%,#caecbd 118.515%);
+    opacity: 1;
+    position: relative;
+    background-size: 180% 100%;
+    z-index: 9;
+    background-repeat: no-repeat;
+}
+.policy__banner-main{
+    position: relative;
+    box-shadow: 0 24px 48px -12px rgb(37 14 75 / 44%);
+    width: 100%;
+    background: url(../images/policy__banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 650px;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+}
+.policy__banner-main:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    bottom: 0;
+    border-radius: 20px;
+    background: linear-gradient(45deg,rgba(37,14,75,0.8) 10%,rgba(37,14,75,0) 90%);
+    z-index: 0;
+}
+.policy__banner-content {
+    position: relative;
+    z-index: 9;
+    margin: 0 0 50px 70px;
+    max-width: 580px;
+}
+.policy__banner-content h2{
+    font-family:'Community Gothic X-Condensed';
+    color: #ffffff !important;
+    font-size: 72px;
+    text-transform: uppercase;
+    letter-spacing: 0;
+    line-height: 1;
+}
+.policy__banner-content p {
+    font-size: 19px;
+    color: #ffffff !important;
+    font-weight: 500;
+}
+.policy__banner-content p a{
+    color: #ffffff !important;
+    font-weight: 700;
+    font-size: 21px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #ffffff;
+    margin-left: 6px;
+    transition: all 0.3s;
+}
+.donate__btn.btn-dark:focus{
+    box-shadow: none !important;
+}
+.donate__btn.btn-dark:focus, .donate__btn.btn-dark:hover{
+    border-color: #029EDA;
+    background-color: #029EDA;
+}
+.policy__banner-content p a:hover{
+    border-bottom: 2px solid #029EDA;
+    color: #029EDA !important;
 }
