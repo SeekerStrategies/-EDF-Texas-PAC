@@ -90,7 +90,7 @@ div#collapsibleNavbar .nav-item a{
 }
 .banner {
     background-position: center;
-    background-image: url(../images/pexels-antoni-shkraba.jpg);
+    background-image: url(../images/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 80px 0;
@@ -215,7 +215,7 @@ ul.pac__list-main li{
     position: relative;
     box-shadow: 0 24px 48px -12px rgb(37 14 75 / 44%);
     width: 100%;
-    background: url(../images/policy__banner.jpg);
+    background: url(../images/policy-banner.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 650px;
