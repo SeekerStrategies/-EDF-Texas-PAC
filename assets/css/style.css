@@ -248,13 +248,16 @@ ul.pac__list-main li{
     letter-spacing: 0;
     line-height: 1;
 }
-.policy__banner-content p {
+.policy__banner-content a {
     font-size: 19px;
     line-height: 22px !important;
     color: #ffffff !important;
     font-weight: 500;
 }
-.policy__banner-content p a{
+.policy__banner-content a:hover{
+    color: #01f99c !important;
+}
+.policy__banner-content p{
     color: #ffffff !important;
     font-weight: 700;
     font-size: 21px;
