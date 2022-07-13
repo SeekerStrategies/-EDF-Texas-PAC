@@ -287,9 +287,7 @@ ul.pac__list-main li{
 .form__main{
     max-width: 580px;
     margin: auto;
-    padding: 60px 50px 50px;
-    background: #ffffff;
-    /* background: #fefcf3; */
+    padding: 40px 50px 0px;
     border-radius: 10px;
     text-align: center;
 }
@@ -371,7 +369,10 @@ ul.pac__list-main li{
     }
     .policy__banner-content a{
         font-size: 17px;
-    line-height: 20px !important;
+        line-height: 20px !important;
+    }
+    .form__main {
+        padding: 30px 50px 0px;
     }
 }
 @media only screen and (max-width: 600px){
@@ -380,6 +381,15 @@ ul.pac__list-main li{
     }
     .policy__banner-main {
         height: 320px;
+    }
+    .form__main{
+        padding: 10px 0px 0px;
+    }
+    .form__main .form__btn, .form__section input, .form__section textarea {
+        font-size: 16px;
+    }
+    .form__main .form__btn{
+        padding: 10px 30px;
     }
 }
 @media only screen and (max-width: 480px){
