@@ -45,6 +45,10 @@ h1, h2, h3, h4, h5, h6{
 p, a, li, time{
     font-family:"halyard-text";
 }
+.form__main .form__btn, .form__section input, .form__section textarea{
+    font-family:"halyard-text";
+    font-size: 17px;
+}
 img {
     max-width: 100%;
     height: auto;
@@ -135,7 +139,7 @@ section.banner:before {
 .texas_main .row, .mission_main .row{
     align-items: center;
 }
-.pac__content h2, .column_content h2 {
+.form__heading, .pac__content h2, .column_content h2 {
     font-weight: 600;
     max-width: 400px;
     font-size: 41px;
@@ -267,13 +271,45 @@ ul.pac__list-main li{
 .donate__btn.btn-dark:focus{
     box-shadow: none !important;
 }
-.donate__btn.btn-dark:focus, .donate__btn.btn-dark:hover{
+.form__main .form__btn:focus, .form__main .form__btn:hover, .donate__btn.btn-dark:focus, .donate__btn.btn-dark:hover{
     border-color: #00985F;
     background-color: #00985F;
+    color: #ffffff;
 }
 .policy__banner-content p a:hover{
     border-bottom: 2px solid #029EDA;
     color: #029EDA !important;
+}
+.form__heading{
+    text-align: center;
+    margin: auto;
+}
+.form__main{
+    max-width: 580px;
+    margin: auto;
+    padding: 60px 50px 50px;
+    background: #ffffff;
+    /* background: #fefcf3; */
+    border-radius: 10px;
+    text-align: center;
+}
+.form__main textarea{
+    resize: none;
+    height: 100px;
+}
+.form__main .form__btn{
+    background-color: var(--dark);
+    padding: 10px 30px 12px;
+    font-size: 18px;
+    color: #ffffff;
+    border-color: var(--dark);
+    line-height: 1.4;
+}
+.form__section textarea::placeholder, .form__section input::placeholder{
+    color: #999999e3;
+}
+.form__section input, .form__section textarea{
+    color: #333333;
 }
 
 @media only screen and (max-width: 1300px){
@@ -289,7 +325,7 @@ ul.pac__list-main li{
     .texas_main .column_content, .mission_main .column_content{
         padding: 40px 0 0 0;
     }
-    .pac__content h2, .column_content h2 {
+    .form__heading, .pac__content h2, .column_content h2 {
         max-width: 80%;
         font-size: 36px;
     }
@@ -353,7 +389,7 @@ ul.pac__list-main li{
     .vision__content h1 {
         font-size: 38px;
     }
-    .pac__content h2, .column_content h2 {
+    .form__heading, .pac__content h2, .column_content h2 {
         font-size: 30px;
         line-height: 32px;
         max-width: 90%;
