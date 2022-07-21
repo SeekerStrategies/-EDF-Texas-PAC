@@ -316,11 +316,40 @@ ul.pac__list-main li{
     max-width: 280px;
     margin: auto;
 }
+.footer__menu-item:hover{
+    color: #ffffff;
+    text-decoration: underline !important;
+}
+#footer .iubenda-embed:not(.no-brand):not(.iubenda-nostyle){
+    color: #ffffff !important;
+    padding: 0 12px !important;
+    transition: all 0.3s;
+    background-color: transparent !important;
+    background-image: none !important;
+    border: none !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    font-family: "halyard-text" !important;
+    line-height: 1.5 !important;
+}
+.footer__menu-item{
+    color: #ffffff;
+    padding: 0 12px;
+    transition: all 0.3s;
+    background-color: transparent !important;
+}
 
 @media only screen and (max-width: 1300px){
     .container{
         max-width: 90% !important;
     }
+}
+@media only screen and (max-width:992px){
+    /* #footer .row{
+        flex-wrap: wrap;
+    } */
 }
 @media only screen and (max-width: 990px){
     .texas_main .row{
@@ -400,6 +429,12 @@ ul.pac__list-main li{
     }
     .form__main .form__btn{
         padding: 10px 30px;
+    }
+    #footer .footer__menu ul{
+        flex-direction: column;
+    }
+    #footer .footer__menu ul li{
+        padding-bottom: 5px;
     }
 }
 @media only screen and (max-width: 480px){
